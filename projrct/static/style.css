@@ -1,0 +1,72 @@
+.{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #0a18b86e;
+}
+
+.team-section{
+    margin-top: 75px;
+}
+
+.team-title h3{
+    font-size: 25px;
+    color:#000;
+    text-align:center;
+    position: relative;
+}
+.team-cards{
+    width:85%;
+    display: flex;
+    justify-content: space-between;
+    margin:20px auto;
+}
+.team-card{
+    background-color: #060721;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0,0,0, 0.2);
+    margin: 0px 20px;
+    padding: 20px;
+    text-align:center;
+    transition: transform 0.6s ease;
+    width: calc(33.33% - 20px);
+}
+.team-card:hover{
+    transform: translateY(-12px);
+}
+.team-image img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.team-detail h4{
+    color: #fff;
+    font-size: 30px;
+    margin: 15px 0px;
+}
+.team-detail p{
+    color: #426385;
+    font-size: 18px;
+}
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #0056b3; /* Darker shade of primary color on hover */
+}
+/* .container{
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px; 
+} */

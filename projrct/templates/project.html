@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>Health prediction</title>
+        </head>
+        <link rel="stylesheet" href="static\style.css">
+        <body>
+            <h2 style="text-align:center;">Get Student Mental Health prediction</h2>
+            <hr>
+            
+                <form action="{{ url_for('prediction') }}" method="post">
+                <label for="">age :</label>
+                <input type="text" name="age" placeholder="Enter your age"></input>
+                <br><br>
+
+                <label for="">gender :</label>
+                <select name="gender" id="">
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                    <option value="2">non-binary</option>
+                </select><br><br>
+
+                <label for="">Are you self emoployed?</label>
+                <select name="self_employed" id="">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select><br><br>
+
+                <label for="">Do you have a family history of mental illness?</label>
+                <select name="family_history" id="">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+                </select><br><br>
+                
+            <label for="">Tf you have a mental health condition, do you feel that it interfere with your work?</label>
+            <select name="work_interfere" id="">
+                <option value="0">N/A</option>
+                <option value="1">Never</option>
+                <option value="2">Often</option>
+                <option value="3">Rarely</option>
+                <option value="4">Sometimes</option>
+            </select><br><br>
+
+            <label for="">How many employees does your company or organisation have?</label>
+            <select name="no_employees" id="">
+                <option value="0">1-5</option>
+                <option value="1">100-500</option>
+                <option value="2">26-100</option>
+                <option value="3">500-1000</option>
+                <option value="4">6-25</option>
+                <option value="5">More than 1000</option>
+            </select><br><br>
+
+            <label for="">Do you work remotely (Outside of an office) atleast 50% of time?</label>
+            <select name="remote_work" id="">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br><br>
+
+            <label for="">Is your employer primarily a tech company organization?</label>
+            <select name="tech_company" id="">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br><br>
+
+            <label for="">Does your employer provide mental health benefits?</label>
+            <select name="benefits" id="">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+                <option value="2">Don't know</option>
+            </select><br><br>
+            <label for="">Do you know the options for mental healthcare your employer provides?</label>
+            <select name="care_options" id="">
+                <option value="0">No</option>
+                <option value="1">Not sure</option>
+                <option value="2">yes</option>
+            </select><br><br>
+
+            <label for="">Has your employee ever discussedmental health as part of an employee wellness program?</label>
+            <select name="wellness_program" id="">
+                <option value="0">Don't know</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            
+            <label for="">Does you employer provide resources to learn more about mental health issues and how to seek help?</label>
+            <select name="seek_help" id="">
+                <option value="0">Don't know</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">Is your anonymuty protected if you choose to take advantages of mental health or substance abuse treatment resources?</label>
+            <select name="anonymity" id="">
+                <option value="0">Don't know</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">How easy is it for you to take medical leave for a mental health conidition?</label>
+            <select name="leave" id="">
+                <option value="0">Don't know</option>
+                <option value="1">Somewhat difficult</option>
+                <option value="2">Somewhat easy</option>
+                <option value="3">Very difficult</option>
+                <option value="4">Very easy</option>
+            </select><br><br>
+
+            <label for="">Do you think that discussing a mental health issue with your employer would have negative consequences?</label>
+            <select name="mental_health_consequences" id="">
+                <option value="0">Maybe</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">Do you think that discussing a physical health issue with your employer would have negative consequences?</label>
+            <select name="phys_health_consequences" id="">
+                <option value="0">Maybe</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">Would you be willing to discuss a mental health issue with your coworkers?</label>
+            <select name="coworkers" id="">
+                <option value="0">No</option>
+                <option value="1">Some of them</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+           
+            <label for="">Would you bring up a mental health issue with a potencial employer in an interview?</label>
+            <select name="mental_health_interview" id="">
+                <option value="0">Maybe</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">Would you bring up a physical health issue with a potencial employer in an interview?</label>
+            <select name="phys_health_consequences" id="">
+                <option value="0">Maybe</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">Do you feel that your employer takes mental health as physical health?</label>
+            <select name="mental_vs_physical" id="">
+                <option value="0">Don't know</option>
+                <option value="1">No</option>
+                <option value="2">Yes</option>
+            </select><br><br>
+
+            <label for="">Have you heard of or observed negative consequences for coworkers with mental health conditions in your workplace?</label>
+            <select name="obs_consequence" id="">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+
+            <button type="submit">Submit</button>
+        
+
+        </form>
+
+    </body>
+
+</html>
